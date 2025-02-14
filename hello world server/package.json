@@ -1,0 +1,15 @@
+{
+  "name": "hello-world-server",
+  "version": "1.0.0",
+  "description": "hello wprld",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run dev",
+    "start": "node server.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
