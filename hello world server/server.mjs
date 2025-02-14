@@ -8,6 +8,18 @@ app.get('/', (req, res) => {
     res.send('Hello World! ' + new Date().toLocaleString()); // Fixed typo
 });
 
+app.get('/services', (req, res) => {
+    console.log(req.ip); // Client IP address print karega
+
+    res.send('services! ' + new Date().toLocaleString()); // Fixed typo
+});
+
+app.get('/about', (req, res) => {
+    console.log(req.ip); // Client IP address print karega
+
+    res.send('about! ' + new Date().toLocaleString()); // Fixed typo
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
