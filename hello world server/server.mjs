@@ -14,6 +14,12 @@ app.get('/services', (req, res) => {
     res.send('services! ' + new Date().toLocaleString()); // Fixed typo
 });
 
+app.get('/contact', (req, res) => {
+    console.log(req.ip); // Client IP address print karega
+
+    res.send('contact! ' + new Date().toLocaleString()); // Fixed typo
+});
+
 app.get('/about', (req, res) => {
     console.log(req.ip); // Client IP address print karega
 
