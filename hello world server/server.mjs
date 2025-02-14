@@ -1,6 +1,6 @@
 import express from 'express';
 const app = express();
-const port = process.env.PORT || 3000;
+const port =3000;
 // 192.168.0.151 mere ip h y 
 app.get('/', (req, res) => {
     console.log(req.ip); // Client IP address print karega
